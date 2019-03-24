@@ -33,7 +33,8 @@ def mapping(value,iMin,iMax,oMin,oMax):
 
 """ Function to limit a value to specific range """
 def limit(n, minn, maxn):
-    return max(min(maxn, n), minn)
+    #return     max(min(maxn, n), minn)
+    return int(max(min(maxn, n), minn))
 
 """ Kalman Filter Class """
 class KalmanFilter(object):
